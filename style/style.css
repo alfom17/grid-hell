@@ -11,7 +11,15 @@ body {
     font-weight: 400;
     font-style: normal;
   }
-  
+   h2{
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#9e0000;
+    font-size: 6em;
+    margin-bottom: 0;
+    margin-top: 0;
+   }
 
  #game-title{
     font-family: "Jersey 10", sans-serif;

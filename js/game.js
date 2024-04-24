@@ -10,5 +10,14 @@ class Game{
 
 
     }
+    gameLoop() {
 
+        
+
+    }
+    start() {
+        this.gameIntervalId = setInterval(() => {
+          this.gameLoop()
+        }, Math.round(1000/60)) 
+      }
 }
