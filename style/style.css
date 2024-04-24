@@ -43,6 +43,7 @@ body {
   display: flex;
    justify-content: center;
    flex-direction: column;
+   display: none;
    
 }
 
@@ -54,7 +55,6 @@ body {
    background-position: center;
    background-size: cover;
    margin-bottom: 10em;
-   visibility: hidden;
    position: relative;
    overflow: hidden;
   

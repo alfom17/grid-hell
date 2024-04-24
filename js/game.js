@@ -4,7 +4,7 @@ class Game{
 
         this.player = new Player()
 
-        
+        this.aBar = new Bars()
 
 
 
