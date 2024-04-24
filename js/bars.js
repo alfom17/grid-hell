@@ -11,7 +11,7 @@ constructor(posY){
     gameBoxNode.append(this.node)
 
      this.x = 0
-     this.y = 80
+     this.y = posY
      this.w = 1200
      this.h = 80
 
@@ -21,6 +21,10 @@ constructor(posY){
     this.node.style.width = `${this.w}px`;
     this.node.style.height = `${this.h}px`
 
+    this.node.style.opacity = 0.5;
+    setTimeout(()=>{
+        this.node.style.opacity = 1;
+    },800)
 }
 
 

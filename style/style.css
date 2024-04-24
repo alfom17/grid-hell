@@ -68,4 +68,10 @@ body {
   
 }
 /*#splash-screen{}*/
-/*#game-over{}
+#game-over{
+  display: none;
+  font-size: 2em;
+  height: 10em;
+  justify-content: center;
+  margin-top: 10em;
+}

@@ -31,6 +31,7 @@ function startGame() {
     game.start()
     
     counter.startCounter()
+    game.initBarFreq()
 
 }
 
@@ -51,6 +52,18 @@ window.addEventListener("keydown",event =>{
         game.player.movementLeftEffect()
     }else if (event.key === 'd' || event.key === 'D'){
         game.player.movementRightEffect()
+    } else if ((event.key === 'w' || event.key === 'W') && (event.key === 'a' || event.key === 'A')){
+        game.player.movementUpEffect()
+        game.player.movementLeftEffect()
+    } else if ((event.key === 'w' || event.key === 'W') && (event.key === 'd' || event.key === 'D')){
+        game.player.movementUpEffect()
+        game.player.movementRightEffect()
+    } else if ((event.key === 's' || event.key === 'S') && (event.key === 'a' || event.key === 'A')){
+        game.player.movementDownEffect()
+        game.player.movementLeftEffect()
+    } else if ((event.key === 's' || event.key === 'S') && (event.key === 'd' || event.key === 'D')){
+        game.player.movementDownEffect()
+        game.player.movementLeftEffect()
     }
     
 })
