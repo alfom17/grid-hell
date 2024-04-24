@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    background-color: #4e4a47;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .jersey-10-regular {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+ #game-title{
+    font-family: "Jersey 10", sans-serif;
+    color:#9e0000;
+    font-size: 9em;
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+ }
+
+#start-screen{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    }
+
+#start-btn{
+    font-size: 4em;
+    justify-content: center;
+    align-items: center;
+    background-color: #9e0000;
+    border-radius: 30%;
+    font-family: "Jersey 10", sans-serif;
+    /*visibility: hidden;*/
+}
+
+#game-screen{
+  display: flex;
+   justify-content: center;
+   flex-direction: column;
+   
+}
+
+#game-box{
+  background-image: url("../images/circles-floor.png");
+   background-color: aliceblue;
+   height: 700px;
+   width: 800px;
+   background-position: center;
+   background-size: cover;
+   margin-bottom: 10em;
+   visibility: hidden;
+   position: relative;
+   overflow: hidden;
+  
+}
+/*#splash-screen{}*/
+/*#game-over{}
