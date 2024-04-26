@@ -32,7 +32,7 @@ class Game{
         this.barIntervalId = setInterval(() =>{
             this.barsAparece()
             console.log("aa");
-        },2000)
+        },1500)
     }
 
     delBarScreen(){
@@ -41,7 +41,7 @@ class Game{
             setTimeout(()=>{
                 this.BarArr.splice(index, 1)
                 eachBar.node.remove()
-            },2000)
+            },1500)
         })
 
 
