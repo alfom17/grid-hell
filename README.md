@@ -1,6 +1,6 @@
 # GRID HELL
 
-## [Play the Game!](www.your-deploy-url-here.com)
+## [Play the Game!](https://alfom17.github.io/grid-hell/)
 
 ![Game Logo](https://i.ibb.co/nQb7SXC/player.png)
 
