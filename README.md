@@ -2,7 +2,7 @@
 
 ## [Play the Game!](www.your-deploy-url-here.com)
 
-![Game Logo](https://ibb.co/VMtg8Fm)
+![Game Logo](https://i.ibb.co/nQb7SXC/player.png)
 
 
 # Description
