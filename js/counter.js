@@ -1,13 +1,12 @@
-let seconds1 = 0
-let seconds2 = 0
-let minutes = 0
+
 class Counter{
 
 constructor(){
     
+    
     this.node = document.createElement ("h2")
     this.node.id = "timeCounter"
-    this.node.innerText = `${minutes}:${seconds2}${seconds1}`
+    this.node.innerText = 0
     counterNode.append(this.node)
 
 }
@@ -15,7 +14,8 @@ constructor(){
 
 
 
-startCounter(){
+}
+/*startCounter(){
     let timer = setInterval(()=>{
 
         seconds1++
@@ -30,7 +30,7 @@ startCounter(){
         
     },1000)
 }
-}
+}*/
  
 
 

@@ -42,7 +42,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #9e0000;
-    border-radius: 30%;
+    
     font-family: "Jersey 10", sans-serif;
     /*visibility: hidden;*/
 }
@@ -74,4 +74,12 @@ body {
   height: 10em;
   justify-content: center;
   margin-top: 10em;
+  margin-bottom: 0;
+}
+#rest-btn{
+  display: none;
+  font-family: "Jersey 10", sans-serif;
+  background-color: #9e0000;
+  font-size: 5em;
+
 }

@@ -6,6 +6,7 @@ const gameOverScreenNode = document.querySelector("#game-over")
 
 const counterNode = document.querySelector("#counter")
 const startBtnNode = document.querySelector("#start-btn")
+const restBtnNode = document.querySelector("#rest-btn")
 
 const gameBoxNode = document.querySelector("#game-box")
 
@@ -24,24 +25,43 @@ function startGame() {
     gameTitleNode.style.display = "none"
 
     game = new Game()
-    counter = new Counter()
+    
     console.log(game)
 
-
+ // intervalos
     game.start()
     
-    counter.startCounter()
+    game.startCounter()
+
     game.initBarFreq()
 
 }
 
 //listado de eventos
 startBtnNode.addEventListener("click", () =>{
-    
+   
     startGame()
-    game.start()
+    
+
 
 })
+
+function restartGame() {
+    restBtnNode.style.display = "none"
+    gameOverScreenNode.style.display = "none"
+    counterNode.style.display = "flex"
+    game.player.node.remove()
+    
+    startGame()
+    
+    gameScreenNode.style.display = "flex"
+
+}
+
+restBtnNode.addEventListener("click", ()=>{
+    restartGame()
+})
+
 window.addEventListener("keydown",event =>{
     if (event.key === 'w' || event.key === 'W') {
     //console.log("aaaa");

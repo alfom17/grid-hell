@@ -1,18 +1,21 @@
+let timer= 0
+
 class Game{
 
     constructor() {
 
         this.player = new Player()
-
+        
+        this.counter = new Counter()
         //this.aBar = new Bars()
         this.BarArr = []
-
-
+        
         this.gameIntervalId;
         this.barIntervalId;
-
+        this.timerId;
     }
-
+    
+    
     barsAparece(){
 
         let randomPosY =  Math.floor(Math.random()* 620)
@@ -68,14 +71,17 @@ class Game{
 
 
     gameLoop() {
-        this.startCounter()
         this.delBarScreen()
         this.colisionBarPlayer()
 
     }
     start() {
+        
+        timer = 0
+        this.counter.node.innerText = 0
         this.gameIntervalId = setInterval(() => {
           this.gameLoop()
+          
         }, Math.round(1000/60)) 
       }
 
@@ -84,36 +90,37 @@ class Game{
         
         clearInterval(this.gameIntervalId)
         clearInterval(this.barIntervalId)
-    
+        clearInterval(this.timerId)
+        counterNode.innerText = ""
+        
        
         gameScreenNode.style.display = "none"
     
         counterNode.style.display = "none"
         
         gameOverScreenNode.style.display = "flex"
+        restBtnNode.style.display = "flex"
         
       }
 
-      counter(){
-        this.node = document.createElement ("h2")
-        this.node.id = "timeCounter"
-        this.node.innerText = `${minutes}:${seconds2}${seconds1}`
-        counterNode.append(this.node)
-
-      } 
+      
 
       startCounter(){
-        let timer = setInterval(()=>{
-    
-            seconds1++
-            if (seconds1 === 9 ){
-                seconds2++
-                seconds1 = 0
-            } else if (seconds2 === 6 ){
-                minutes++
-                seconds2 = 0
-                seconds1 = 0
-            }
+             this.timerId = setInterval(()=>{
+            console.log("andando");
+            timer = timer + 1
+            this.counter.node.innerText = timer
+            
+
+           /* this.counter.seconds1++
+            if (this.counter.seconds1 === 9 ){
+                this.counter.seconds2++
+                this.counter.seconds1 = 0
+            } else if (this.counter.seconds2 === 6 ){
+                this.counter.minutes++
+                this.counter.seconds2 = 0
+                this.counter.seconds1 = 0
+            }*/
             
         },1000)
     }
